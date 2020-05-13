@@ -1,0 +1,12 @@
+title 0.6 New Note SPA
+
+note over browser:
+    browser uses javascript code to 
+    add new note and rerender note list
+end note
+
+browser -> server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+    server receives new note as JSON data
+end note
