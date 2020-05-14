@@ -1,2 +1,4 @@
 exercise 1: 18 min
 exercise 2: 10 min
+exercise 3: 11 min
+exercise 4: 11 min
