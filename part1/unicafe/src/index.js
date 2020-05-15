@@ -10,18 +10,22 @@ const Statistics = (props) => {
   let average = all > 0 ? (good - bad) / all : "-"
   let positive = all > 0 ? (good / all) : "-"
 
-  return (
-    <div>
-      <h1>statistics</h1>
+  if (all === 0) {
+    return (
+      <div>
+        No feedback given
+      </div>
+    )
+  } 
 
-      <p>
+  return (
+    <div>    
         good {good}<br />
         neutral {neutral}<br />
         bad {bad}<br />
         all {all}<br />
         average {average}<br />
         positive {positive} %
-      </p>
     </div>
   )
 }
@@ -49,6 +53,7 @@ const App = () => {
         bad
       </button>
 
+      <h1>statistics</h1>
       <Statistics good={good} neutral={neutral} bad={bad} />
     </div>
   )
