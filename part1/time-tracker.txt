@@ -4,3 +4,5 @@ exercise 1.3: 11 min
 exercise 1.4: 11 min
 exercise 1.5: 1 min
 exercise 1.6: 21 min
+exercise 1.7: 21 min
+exercise 1.8: 12 min
