@@ -7,4 +7,5 @@ exercise 1.6: 21 min
 exercise 1.7: 21 min
 exercise 1.8: 12 min
 exercise 1.9: 5 min
-exercise 2.0: 25 min
+exercise 1.10: 25 min
+exercise 1.11: 30 min

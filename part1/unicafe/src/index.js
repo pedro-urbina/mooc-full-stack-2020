@@ -7,20 +7,19 @@ const Button = (props) => (
 
 const Statistic = (props) => {
   return (
-    <div>
-      {props.text} {props.value} {props.unit}
-    </div>
+    <tbody>
+      <tr>
+        <td>{props.text} </td>
+        <td>{props.value} {props.unit}</td>
+      </tr>
+    </tbody>    
   )
 }
 
 const Statistics = (props) => {
-  let good = props.good
-  let neutral = props.neutral
-  let bad = props.bad
-
-  let all = good + bad + neutral
-  let average = (good - bad) / all
-  let positive = (good / all)
+  let all = props.good + props.bad + props.neutral
+  let average = (props.good - props.bad) / all
+  let positive = (props.good / all)
 
   if (all === 0) {
     return (
@@ -31,14 +30,14 @@ const Statistics = (props) => {
   }
 
   return (
-    <div>    
-        <Statistic text="good" value={good} />
-        <Statistic text="neutral" value={neutral} />
-        <Statistic text="bad" value={bad} />
+    <table>    
+        <Statistic text="good" value={props.good} />
+        <Statistic text="neutral" value={props.neutral} />
+        <Statistic text="bad" value={props.bad} />
         <Statistic text="all" value={all} />
         <Statistic text="average" value={average} />
         <Statistic text="positive" value={positive} unit="%" />
-    </div>
+    </table>
   )
 }
 
