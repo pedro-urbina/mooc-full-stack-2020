@@ -10,3 +10,5 @@ exercise 1.9: 5 min
 exercise 1.10: 25 min
 exercise 1.11: 30 min
 exercise 1.12: 27 min
+exercise 1.13: 56 min
+
